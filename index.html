@@ -12,13 +12,13 @@
 	<header>
 		<div class="container">
 			<div class="header__title">
-				<h1>Gate 31 test task</h1>
+				<h1><a href="./">Gate 31 test task</a></h1>
 			</div>
 			<div class="header__search search">
-			
-					<input class="search__input" type="text" placeholder="type here..."/>
-					<button class="search__button button">Search</button>
-		
+				<form action="./?title=" method="get">
+					<input class="search__input" name="title" type="text" placeholder="type the title..."/>
+					<button class="search__button button" type="submit">Search</button>
+				</form>	
 			</div>
 		</div>
 	</header>
