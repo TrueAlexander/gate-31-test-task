@@ -1,0 +1,88 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+button {
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0075ff;
+}
+
+button:hover {
+  background-color: #695c5c;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid #695c5c4c; 
+  background-color: #fff;
+  padding: 2px;
+
+}
+
+.search__input:focus {
+  outline: none;
+  border-bottom: 1px solid #695c5c; 
+}
+
+.search__input:focus::placeholder {
+  color: transparent;
+}
+
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.header__search {
+  margin: 50px 0 0;
+}
+
+.main__row {
+  margin: 0 auto 50px;
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  padding: 5px;
+  height: 160px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+
+.card.clicked {
+  background-color: #695c5c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+}
+
